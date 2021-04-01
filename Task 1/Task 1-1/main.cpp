@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <math.h>
 
 using namespace std;
@@ -10,7 +10,7 @@ int main()
 {
 	const auto x = 0.61;
 	const auto y = 3.4;
-	const auto z = 16.5; /*Ввели константы x,y,z*/
+	const auto z = 16.5; /*Р’РІРµР»Рё РєРѕРЅСЃС‚Р°РЅС‚С‹ x,y,z*/
 
 	const auto a = GetA(x, y, z);
 	const auto b = GetB(x, y, z);
@@ -23,10 +23,10 @@ int main()
 
 double GetA(const double x, const double y, const double z)
 {
-	return (pow(x, 3) * pow(tan((x + y) * (x + y)), 2) + z / sqrt(x + y)); /*функция, по которой мы получаем А*/
+	return (pow(x, 3) * pow(tan((x + y) * (x + y)), 2) + z / sqrt(x + y)); /*С„СѓРЅРєС†РёСЏ, РїРѕ РєРѕС‚РѕСЂРѕР№ РјС‹ РїРѕР»СѓС‡Р°РµРј Рђ*/
 }
 
-double GetB(const double x, const double y, const double z) /*Функция, по которой мы получаем B*/
+double GetB(const double x, const double y, const double z) /*Р¤СѓРЅРєС†РёСЏ, РїРѕ РєРѕС‚РѕСЂРѕР№ РјС‹ РїРѕР»СѓС‡Р°РµРј B*/
 {
 	return ((y * pow(x, 2) - z) / (exp(z * x) - 1));
 }
