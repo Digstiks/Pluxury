@@ -1,5 +1,4 @@
 ﻿// Task 1-3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
 
 #include <iostream>
 #include<cmath>
@@ -14,7 +13,7 @@ double getPressure(const int g, const double Weight,
 int main()
 {
     setlocale(LC_ALL, "ru");
-    int g=9.81;
+    float g=9.81;
     double Weight;
     cout << "Введите массу бетонной плиты" << endl;
     cin >> Weight;
@@ -22,7 +21,7 @@ int main()
     cout << "Введите площадь опоры" << endl;
     cin >> Area;
     cout << "Давление: ";
-    double Pressure = getPressure(g, Weight, Area); //Вызов функции
+    double Pressure = getPressure(g, Weight, Area); 
     cout << Pressure;
     return 0;
 }
